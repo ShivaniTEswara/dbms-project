@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.contentpanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,32 +50,18 @@
             this.panel1.Size = new System.Drawing.Size(224, 620);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // button4
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 74);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "HOME";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button2.Location = new System.Drawing.Point(0, 211);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(221, 74);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "DIAGNOSIS";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button4.Location = new System.Drawing.Point(-3, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(221, 74);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "PATIENT";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -83,25 +69,39 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button3.Location = new System.Drawing.Point(0, 141);
+            this.button3.Location = new System.Drawing.Point(-3, 74);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(221, 74);
             this.button3.TabIndex = 3;
             this.button3.Text = "PRESCRIPTION";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // button2
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button4.Location = new System.Drawing.Point(0, 70);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(221, 74);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "PATIENT";
-            this.button4.UseVisualStyleBackColor = false;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.Location = new System.Drawing.Point(-3, 144);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(221, 74);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "DIAGNOSIS";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Location = new System.Drawing.Point(-3, 214);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(224, 74);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "LOGOUT";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // contentpanel
             // 

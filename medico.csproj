@@ -166,6 +166,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="Resources\bhome.jpg" />
+    <None Include="Resources\ptbg1.jpg" />
+    <None Include="Resources\ptbg.jpg" />
+    <None Include="Resources\rarrow.png" />
+    <None Include="Resources\larrow.png" />
+    <None Include="Resources\diagbut.png" />
+    <None Include="Resources\presbut.png" />
+    <None Include="Resources\patientbut.png" />
+    <None Include="Resources\hbut.png" />
+    <None Include="Resources\icons8-home-page-filled-50.png" />
+    <None Include="Resources\hbuttonh.bmp" />
     <None Include="Resources\left12.png" />
     <None Include="Resources\right12.png" />
     <None Include="Resources\r.png" />

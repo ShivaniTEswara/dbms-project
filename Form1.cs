@@ -60,7 +60,7 @@ namespace medico
             if (name.Equals(uname) && pass.Equals(upass))
             {
                 //MessageBox.Show("Log in Successful");
-                PatientInfo pi = new PatientInfo();
+                PInfo pi = new PInfo();
                 this.Hide();
                 pi.Show();
             }
@@ -78,6 +78,11 @@ namespace medico
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

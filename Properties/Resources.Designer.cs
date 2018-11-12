@@ -73,9 +73,29 @@ namespace medico.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bhome {
+            get {
+                object obj = ResourceManager.GetObject("bhome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dbutton {
             get {
                 object obj = ResourceManager.GetObject("dbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap diagbut {
+            get {
+                object obj = ResourceManager.GetObject("diagbut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +113,29 @@ namespace medico.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hbut {
+            get {
+                object obj = ResourceManager.GetObject("hbut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hbutton {
             get {
                 object obj = ResourceManager.GetObject("hbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hbuttonh {
+            get {
+                object obj = ResourceManager.GetObject("hbuttonh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +156,26 @@ namespace medico.Properties {
         internal static System.Drawing.Bitmap html_color_codes_color_tutorials_903ea3cb {
             get {
                 object obj = ResourceManager.GetObject("html-color-codes-color-tutorials-903ea3cb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_home_page_filled_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-home-page-filled-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap larrow {
+            get {
+                object obj = ResourceManager.GetObject("larrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +206,16 @@ namespace medico.Properties {
         internal static System.Drawing.Bitmap patient_icon {
             get {
                 object obj = ResourceManager.GetObject("patient icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap patientbut {
+            get {
+                object obj = ResourceManager.GetObject("patientbut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +263,36 @@ namespace medico.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap presbut {
+            get {
+                object obj = ResourceManager.GetObject("presbut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ptbg {
+            get {
+                object obj = ResourceManager.GetObject("ptbg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ptbg1 {
+            get {
+                object obj = ResourceManager.GetObject("ptbg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ptbutton {
             get {
                 object obj = ResourceManager.GetObject("ptbutton", resourceCulture);
@@ -206,6 +306,16 @@ namespace medico.Properties {
         internal static System.Drawing.Bitmap r {
             get {
                 object obj = ResourceManager.GetObject("r", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rarrow {
+            get {
+                object obj = ResourceManager.GetObject("rarrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

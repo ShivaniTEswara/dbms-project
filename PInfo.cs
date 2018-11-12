@@ -72,7 +72,7 @@ namespace medico
             PatientTabButton.Text = "PATIENT";
             PrescriptionTabButton.Text = "PRESCRIPTION";
             DiagnosisTabButton.Text = "DIAGNOSIS";
-            SlidingPanel_ToggleButton.Image = Properties.Resources.left12;
+            SlidingPanel_ToggleButton.Image = Properties.Resources.larrow;
             SlidingPanel_ToggleButton.ImageAlign = ContentAlignment.MiddleCenter;
             HomeTabButton.Image = null;
             PatientTabButton.Image = null;
@@ -86,12 +86,13 @@ namespace medico
             PatientTabButton.Text = "";
             PrescriptionTabButton.Text = "";
             DiagnosisTabButton.Text = "";
-            SlidingPanel_ToggleButton.Image = Properties.Resources.right12;
+            SlidingPanel_ToggleButton.Image = Properties.Resources.rarrow;
             SlidingPanel_ToggleButton.ImageAlign = ContentAlignment.MiddleLeft;
-            HomeTabButton.Image = Properties.Resources.hbutton;
-            PatientTabButton.Image = Properties.Resources.patient;
-            PrescriptionTabButton.Image = Properties.Resources.prbutton;
-            DiagnosisTabButton.Image = Properties.Resources.dbutton;
+            HomeTabButton.Image = Properties.Resources.hbut;
+            
+            PatientTabButton.Image = Properties.Resources.patientbut;
+            PrescriptionTabButton.Image = Properties.Resources.presbut;
+            DiagnosisTabButton.Image = Properties.Resources.diagbut;
 
         }
 
@@ -107,7 +108,9 @@ namespace medico
             {
                 homeuc.Instance.BringToFront();
             }
+
         }
+        
 
         private void PatientTabButton_Click(object sender, EventArgs e)
         {

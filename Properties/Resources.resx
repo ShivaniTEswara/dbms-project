@@ -121,29 +121,44 @@
   <data name="background-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background-3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bhome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bhome.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\r.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pbutton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pbutton1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="left12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="patient" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\patient.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hbut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hbut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="larrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\larrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hbuttonh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hbuttonh.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pbutton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="right12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\right12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rarrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grad-670x376" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grad-670x376.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="right12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patient icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\patient icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ptbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ptbutton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,19 +166,37 @@
   <data name="prbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pbutton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbutton1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diagbut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diagbut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="html-color-codes-color-tutorials-903ea3cb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\html-color-codes-color-tutorials-903ea3cb.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patientbut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\patientbut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home-button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="presbut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\presbut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="patient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\patient.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-home-page-filled-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-home-page-filled-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pbutton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pbutton2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="patient icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\patient icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ptbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ptbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="left12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ptbg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ptbg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
