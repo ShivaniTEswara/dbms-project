@@ -152,7 +152,7 @@ namespace medico
             {
                 SqlCommand cmd = new SqlCommand("ptsearch", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@P_SSN", searchtb.Text);
+                cmd.Parameters.AddWithValue("@PRES_ID", searchtb.Text);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
@@ -194,8 +194,11 @@ namespace medico
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("UPDATE PATIENT SET D_SSN=@D_SSN, PNAME=@PNAME, AGE=@AGE, ADDRESS=@ADDRESS, PH_NO=@PH_NO, GENDER=@GENDER WHERE P_SSN=@P_SSN", con);
+                //SqlCommand cmd = new SqlCommand("UPDATE PATIENT SET D_SSN=@D_SSN, PNAME=@PNAME, AGE=@AGE, ADDRESS=@ADDRESS, PH_NO=@PH_NO, GENDER=@GENDER WHERE P_SSN=@P_SSN", con);
                 //cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlCommand cmd = new SqlCommand("ptupdate", con);
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@P_SSN", pssntb.Text);
                 cmd.Parameters.AddWithValue("@D_SSN", dssncb.Text);

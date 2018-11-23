@@ -68,16 +68,20 @@ namespace medico
         }
         public void expandSlidingPanelGUI()
         {
-            HomeTabButton.Text = "HOME";
+            HomeTabButton.Text = "LOG OUT";
             PatientTabButton.Text = "PATIENT";
             PrescriptionTabButton.Text = "PRESCRIPTION";
             DiagnosisTabButton.Text = "DIAGNOSIS";
+            medTabButton.Text = "MEDICINE";
+            billTabButton.Text = "BILL";
             SlidingPanel_ToggleButton.Image = Properties.Resources.larrow;
             SlidingPanel_ToggleButton.ImageAlign = ContentAlignment.MiddleCenter;
             HomeTabButton.Image = null;
             PatientTabButton.Image = null;
             PrescriptionTabButton.Image = null;
             DiagnosisTabButton.Image = null;
+            medTabButton.Image = null;
+            billTabButton.Image = null;
 
         }
         public void retractSlidingPanelGUI()
@@ -93,12 +97,15 @@ namespace medico
             PatientTabButton.Image = Properties.Resources.patientbut;
             PrescriptionTabButton.Image = Properties.Resources.presbut;
             DiagnosisTabButton.Image = Properties.Resources.diagbut;
+            billTabButton.Image = Properties.Resources.bill;
+            medTabButton.Image = Properties.Resources.med;
+
 
         }
 
         private void HomeTabButton_Click(object sender, EventArgs e)
         {
-            if (!ContentPanel.Controls.Contains(homeuc.Instance))
+            /*if (!ContentPanel.Controls.Contains(homeuc.Instance))
             {
                 ContentPanel.Controls.Add(homeuc.Instance);
                 homeuc.Instance.Dock = DockStyle.Fill;
@@ -107,7 +114,10 @@ namespace medico
             else
             {
                 homeuc.Instance.BringToFront();
-            }
+            }*/
+            Home h = new Home();
+            this.Hide();
+            h.Show();
 
         }
         
@@ -154,6 +164,32 @@ namespace medico
             }
         }
 
-        
+        private void medTabButton_Click(object sender, EventArgs e)
+        {
+             if (!ContentPanel.Controls.Contains(medicine.Instance))
+            {
+                ContentPanel.Controls.Add(medicine.Instance);
+                medicine.Instance.Dock = DockStyle.Fill;
+                medicine.Instance.BringToFront();
+            }
+            else
+            {
+                medicine.Instance.BringToFront();
+            }
+        }
+
+        private void billTabButton_Click(object sender, EventArgs e)
+        {
+            if (!ContentPanel.Controls.Contains(billuc.Instance))
+            {
+                ContentPanel.Controls.Add(billuc.Instance);
+                billuc.Instance.Dock = DockStyle.Fill;
+                billuc.Instance.BringToFront();
+            }
+            else
+            {
+                billuc.Instance.BringToFront();
+            }
+        }
     }
 }

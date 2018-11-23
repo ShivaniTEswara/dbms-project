@@ -24,7 +24,7 @@ namespace medico
         private String getUserName()
         {
             con.Open();
-            String syntax = "SELECT DNAME FROM DOCTOR where D_SSN='D101'";
+            String syntax = "SELECT DNAME FROM DOCTOR where D_SSN='D100'";
             cmd = new SqlCommand(syntax, con);
             dr = cmd.ExecuteReader();
             dr.Read();
@@ -38,7 +38,7 @@ namespace medico
         private String getPassword()
         {
             con.Open();
-            String syntax = "SELECT D_SSN FROM DOCTOR where DNAME='KUMAR'";
+            String syntax = "SELECT D_SSN FROM DOCTOR where DNAME='PROMED'";
             cmd = new SqlCommand(syntax, con);
             dr = cmd.ExecuteReader();
             dr.Read();
@@ -83,6 +83,11 @@ namespace medico
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

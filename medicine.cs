@@ -11,22 +11,22 @@ using System.Data.SqlClient;
 
 namespace medico
 {
-    public partial class prescriptionuc : UserControl
+    public partial class medicine : UserControl
     {
-        private static prescriptionuc _instance;
+        private static medicine _instance;
 
-        public static prescriptionuc Instance
+        public static medicine Instance
         {
             get
             {
                 if (_instance == null)
                 {
-                    _instance = new prescriptionuc();
+                    _instance = new medicine();
                 }
                 return _instance;
             }
         }
-        public prescriptionuc()
+        public medicine()
         {
             InitializeComponent();
         }
@@ -35,9 +35,7 @@ namespace medico
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT P.PRES_ID, P.M_QTY, P1.P_SSN FROM PATIENT P1, PRESCRIPTION P  WHERE P.P_SSN = P1.P_SSN ORDER BY P.PRES_ID", con);
-
-
+                SqlCommand cmd = new SqlCommand("SELECT M.ID,P.PRES_ID,M.MNAME, M.MED_QTYDAY, M.NO_OF_DAYS FROM MEDICINE M, PRESCRIPTION P  WHERE M.PRES_ID=P.PRES_ID ORDER BY M.ID", con);
                 //cmd.CommandType = CommandType.StoredProcedure;
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -64,14 +62,60 @@ namespace medico
 
         }
 
+
+
+        private void agetb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchbutton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT M.ID, P.PRES_ID, M.MNAME, M.MED_QTYDAY, M.NO_OF_DAYS FROM PRESCRIPTION P, MEDICINE M WHERE P.PRES_ID = M.PRES_ID AND M.ID=@ID", con);
+               //cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ID", searchtb.Text);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+
+                con.Open();
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("      <<<INVALID SQL OPERATION>>>     " + ex);
+                }
+                con.Close();
+
+                dataGridView2.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("" + ex);
+            }
+        }
+
+        private void medicine_Load(object sender, EventArgs e)
+        {
+            refresh_dgv();
+
+        }
+
         private void addbutton_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into PRESCRIPTION(PRES_ID,M_QTY,P_SSN) values (@PRES_ID,@M_QTY,@P_SSN)", con);
-           //cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand cmd = new SqlCommand("insert into MEDICINE(ID,PRES_ID,MNAME,MED_QTYDAY,NO_OF_DAYS) values (@ID,@PRES_ID,@MNAME,@MED_QTYDAY,@NO_OF_DAYS)", con);
+            //cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.AddWithValue("@PRES_ID", pssntb.Text);
-            cmd.Parameters.AddWithValue("@M_QTY", nametb.Text);
-            cmd.Parameters.AddWithValue("@P_SSN", phnotb.Text);
+            cmd.Parameters.AddWithValue("@ID", pssntb.Text);
+            cmd.Parameters.AddWithValue("@PRES_ID", nametb.Text);
+            cmd.Parameters.AddWithValue("@MNAME", agetb.Text);
+            cmd.Parameters.AddWithValue("@MED_QTYDAY", phnotb.Text);
+            cmd.Parameters.AddWithValue("@NO_OF_DAYS", addtb.Text);
 
             con.Open();
             try
@@ -93,15 +137,17 @@ namespace medico
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("UPDATE PRESCRIPTION SET P_SSN=@P_SSN, M_QTY=@M_QTY  WHERE PRES_ID=@PRES_ID", con);
+                //SqlCommand cmd = new SqlCommand("UPDATE PATIENT SET D_SSN=@D_SSN, PNAME=@PNAME, AGE=@AGE, ADDRESS=@ADDRESS, PH_NO=@PH_NO, GENDER=@GENDER WHERE P_SSN=@P_SSN", con);
                 //cmd.CommandType = CommandType.StoredProcedure;
 
-               // SqlCommand cmd = new SqlCommand("ptupdate", con);
+                SqlCommand cmd = new SqlCommand("UPDATE MEDICINE SET PRES_ID=@PRES_ID, MED_QTYDAY=@MED_QTYDAY,NO_OF_DAYS=@NO_OF_DAYS  WHERE ID=@ID", con);
                 //cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@PRES_ID", pssntb.Text);
-                cmd.Parameters.AddWithValue("@M_QTY", nametb.Text);
-                cmd.Parameters.AddWithValue("@P_SSN", phnotb.Text);
+                cmd.Parameters.AddWithValue("@ID", pssntb.Text);
+                cmd.Parameters.AddWithValue("@PRES_ID", nametb.Text);
+                cmd.Parameters.AddWithValue("@MNAME", agetb.Text);
+                cmd.Parameters.AddWithValue("@MED_QTYDAY", phnotb.Text);
+                cmd.Parameters.AddWithValue("@NO_OF_DAYS", addtb.Text);
 
 
 
@@ -125,19 +171,14 @@ namespace medico
             }
         }
 
-        private void prescriptionuc_Load(object sender, EventArgs e)
-        {
-            refresh_dgv();
-        }
-
         private void deletebutton_Click(object sender, EventArgs e)
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("delete from PRESCRIPTION WHERE PRES_ID=@PRES_ID", con);
+                SqlCommand cmd = new SqlCommand("delete from MEDICINE WHERE ID=@ID", con);
                 //cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@PRES_ID", pssntb.Text);
+                cmd.Parameters.AddWithValue("@ID", pssntb.Text);
 
 
                 con.Open();
@@ -165,54 +206,9 @@ namespace medico
             searchtb.Text = "";
             pssntb.Text = "";
             nametb.Text = "";
+            agetb.Text = "";
             phnotb.Text = "";
-           
-        }
-
-        private void searchbutton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                SqlCommand cmd = new SqlCommand("SELECT P.PRES_ID, P.M_QTY, P1.P_SSN FROM PRESCRIPTION P, PATIENT P1 WHERE P.P_SSN = P1.P_SSN AND P.PRES_ID=@PRES_ID ", con);
-
-                //cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@PRES_ID", searchtb.Text);
-
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-
-                con.Open();
-                try
-                {
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("      <<<INVALID SQL OPERATION>>>     " + ex);
-                }
-                con.Close();
-
-                dataGridView2.DataSource = ds.Tables[0];
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("" + ex);
-            }
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void search_Click(object sender, EventArgs e)
-        {
+            addtb.Text = "";
 
         }
     }
